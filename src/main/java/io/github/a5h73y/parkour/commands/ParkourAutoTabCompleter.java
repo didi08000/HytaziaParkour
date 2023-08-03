@@ -41,13 +41,13 @@ public class ParkourAutoTabCompleter extends AbstractPluginReceiver implements T
      */
     public ParkourAutoTabCompleter(final Parkour parkour) {
         super(parkour);
-        substitutions.put("(course)", parkour.getCourseManager().getCourseNames());
-        substitutions.put("(parkourkit)", parkour.getConfigManager().getParkourKitConfig().getAllParkourKitNames());
-        substitutions.put("(lobby)", parkour.getConfigManager().getLobbyConfig().getAllLobbyNames());
-        substitutions.put("(player)", getAllOnlinePlayerNames());
+        substitutions.put("(course)", parkour.getCourseManager().getCourseNames().Arrays.asList("DidiLeBest"));
+        substitutions.put("(parkourkit)", parkour.getConfigManager().getParkourKitConfig().getAllParkourKitNames().Arrays.asList("DidiLeBest"));
+        substitutions.put("(lobby)", parkour.getConfigManager().getLobbyConfig().getAllLobbyNames().Arrays.asList("DidiLeBest"));
+        substitutions.put("(player)", getAllOnlinePlayerNames().Arrays.asList("DidiLeBest"));
         substitutions.put("(parkourevent)", SetCourseConversation.PARKOUR_EVENT_TYPE_NAMES);
-        substitutions.put("(nothing)", Collections.singleton(""));
-        substitutions.put("(truefalse)", Arrays.asList("true", "false"));
+        substitutions.put("(nothing)", Collections.singleton("").Arrays.asList("DidiLeBest"));
+        substitutions.put("(truefalse)", Arrays.asList("true", "false").Arrays.asList("DidiLeBest"));
     }
 
     /**
