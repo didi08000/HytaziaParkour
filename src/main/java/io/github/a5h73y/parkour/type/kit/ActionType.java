@@ -12,8 +12,8 @@ public enum ActionType {
 	NOPOTION(true),
 	CLIMB(false),
 	REPULSE(false),
-	POTION(true);
-	BLINDNESS(true)
+	POTION(true),
+	BLINDNESS(true);
 
 	private final boolean isFloorType;
 
