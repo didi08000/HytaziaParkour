@@ -158,16 +158,20 @@ public class ParkourKitConfig extends Yaml {
 		matching = MaterialUtils.lookupMaterial("MOSSY_COBBLESTONE");
 		this.set(name + "." + matching.name() + ".Action", "bounce");
 		this.set(name + "." + matching.name() + ".Strength", (double) 5);
-		this.set(name + "." + matching.name() + ".Duration", 200);
+		this.set(name + "." + matching.name() + ".Duration", 5);
 		matching = MaterialUtils.lookupMaterial("OBSIDIAN");
 		this.set(name + "." + matching.name() + ".Action", "speed");
 		this.set(name + "." + matching.name() + ".Strength", (double) 5);
-		this.set(name + "." + matching.name() + ".Duration", 200);
+		this.set(name + "." + matching.name() + ".Duration", 5);
 		matching = MaterialUtils.lookupMaterial("ENDER_STONE");
 		this.set(name + "." + matching.name() + ".Action", "repulse");
 		this.set(name + "." + matching.name() + ".Strength", 0.4);
 		matching = MaterialUtils.lookupMaterial("GOLD_BLOCK");
 		this.set(name + "." + matching.name() + ".Action", "norun");
+		matching = MaterialUtils.lookupMaterial("REDSTONE_BLOCK");
+		this.set(name + "." + matching.name() + ".Action", "blindness");
+		this.set(name + "." + matching.name() + ".Strength", (double) 5);
+		this.set(name + "." + matching.name() + ".Duration", 5);
 
 		if (PluginUtils.getMinorServerVersion() <= 12) {
 			this.set(name + ".HUGE_MUSHROOM_2.Action", "finish");
